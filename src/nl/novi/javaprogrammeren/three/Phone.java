@@ -11,8 +11,10 @@ public class Phone {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getInternationalPhoneNumber() {
-        String phoneNumber = "+31";
+
+    public String getInternationalPhoneNumber(Phone phone) {
+        String phoneNumber = "+31" + phone.getPhoneNumber();
+
 
         return phoneNumber;
     }
